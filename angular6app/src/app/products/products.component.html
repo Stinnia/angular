@@ -1,0 +1,15 @@
+
+<div class="container">
+  <div class="row">
+		<!-- * means inside tag	 -->
+      <div *ngFor="let product of testData; let i = index" class="border rounded p-3 m-2">
+        <h3> {{product.ProductName}}</h3>
+        <p> {{product.UnitPrice}}</p>
+        <p> {{product.QuantityPerUnit}}</p>
+        <button (click)="checkStock(product)" class="btn btn-primary">Check availability</button>
+	  </div>
+	  
+  </div>
+</div>
+
+
